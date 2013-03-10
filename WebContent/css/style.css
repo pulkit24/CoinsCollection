@@ -1,0 +1,385 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, strong,
+ol, ul, li,
+table, tr, th, td,
+form{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+html {
+  overflow: auto;
+}
+html, body{
+  height: 100%;
+  min-height: 100%;
+}
+body {
+    background-color:#E1F5A9;
+    font-family:"Segoe UI", Tahoma, Verdana, Helvetica, Arial, sans;
+    font-size: 20px;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+    margin:10px 0;
+}
+body>header{
+    background:url(/img/logo.png) no-repeat bottom left;
+    color:#333;
+    font-family:Century Gothic, sans-serif;
+    font-weight:normal;
+    left:10%;
+    min-height:100px;
+    padding:0 20px 20px 20px;
+    position:relative;
+    text-align:center;
+    vertical-align:bottom;
+    width:1000px;
+}
+body>header h1{
+    font-size:48px;
+    font-weight:normal;
+}
+body>header h2{
+    font-size:36px;
+    font-weight:normal;
+    font-style:italic;
+}
+body>header a{
+    text-decoration:none;
+    color:#333;
+}
+body>header a:hover{
+    color:#fff;
+}
+body>section{
+    background-color:#fdfdfd;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    box-shadow:0 0 3px 2px #B1C47A;
+    -moz-box-shadow:0 0 3px 2px #B1C47A;
+    -webkit-box-shadow:0 0 3px 2px #B1C47A;
+    left:10%;
+    padding:20px;
+    position:relative;
+    width:1000px;
+}
+form fieldset{
+    border:none;
+    clear:both;
+    padding:10px 10px;
+}
+form fieldset label{
+    display:inline-block;
+    margin-left:140px;
+    margin-right:10px;
+    text-align:right;
+    vertical-align:middle;
+    width:150px;
+}
+form fieldset input[type="text"], form fieldset input[type="file"]{
+    text-align:left;
+    width:300px;
+}
+form fieldset input[type="text"].short{
+    width:85px;
+}
+form fieldset label.long{
+    margin-left:0;
+    width:300px;
+}
+form fieldset input[type="file"].long{
+    margin-left:150px;
+}
+form fieldset textarea{
+    background:url(img/quotes.png) no-repeat top left;
+    height:100px;
+    text-align:left;
+    width:300px;
+}
+form fieldset section{
+    margin:0;
+    padding:0;
+}
+form fieldset section label{
+    margin-left:0;
+    vertical-align:top;
+    width:150px;
+}
+form fieldset section input{
+    width:200px;
+}
+input[type="text"], textarea, select{
+    background-color:#fafafa;
+    border:1px solid #777;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    height:30px;
+    padding:2px 8px;
+}
+input[type="submit"], section#coinShowcase a{
+    background-color:#36f;
+    border:1px solid #33f;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    color:#fff;
+    font-size:16px;
+    height:30px;
+    padding:2px 8px;
+    text-align:center;
+    min-width:75px;
+}
+section#coinShowcase a.variant{
+    background-color:#2AA81E;
+    border:1px solid #0F8005;
+}
+input[type="submit"], section#coinShowcase a{
+    box-shadow:inset 0 2px 2px 0px #37f;
+    -moz-box-shadow:inset 0 2px 2px 0px #37f;
+    -webkit-box-shadow:inset 0 2px 2px 0px #37f;
+}
+section#coinShowcase a.variant{
+    box-shadow:inset 0 2px 2px 0px #30B324;
+    -moz-box-shadow:inset 0 2px 2px 0px #30B324;
+    -webkit-box-shadow:inset 0 2px 2px 0px #30B324;
+}
+input[type="submit"]:hover, input[type="submit"]:focus, section#coinShowcase a:hover{
+    background-color:#37f;
+    border-color:#34f;
+}
+section#coinShowcase a.variant:hover{
+    background-color:#30B324;
+    border-color:#0F8005;
+}
+input[type="submit"]:active, section#coinShowcase a:active{
+    box-shadow:inset 0 2px 2px 0px #36f;
+    -moz-box-shadow:inset 0 2px 2px 0px #36f;
+    -webkit-box-shadow:inset 0 2px 2px 0px #36f;
+}
+section#coinShowcase a.variant:active{
+    box-shadow:inset 0 2px 2px 0px #2AA81E;
+    -moz-box-shadow:inset 0 2px 2px 0px #2AA81E;
+    -webkit-box-shadow:inset 0 2px 2px 0px #2AA81E;
+}
+form fieldset>input[type="button"], section.popup button.popupCloseButton{
+    background-color:#ccc;
+    border:1px solid #777;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    color:#000;
+    font-size:16px;
+    height:30px;
+    padding:2px 8px;
+    text-align:center;
+    min-width:75px;
+}
+form fieldset input[type="button"]:hover, form fieldset input[type="button"]:focus, section.popup button.popupCloseButton:hover, section.popup button.popupCloseButton:focus{
+    background-color:#ddd;
+    border-color:#888;
+}
+form fieldset input[type="button"]{
+    box-shadow:inset 0 2px 2px 0px #ddd;
+    -moz-box-shadow:inset 0 2px 2px 0px #ddd;
+    -webkit-box-shadow:inset 0 2px 2px 0px #ddd;
+}
+form fieldset input[type="button"]:active{
+    box-shadow:inset 0 2px 2px 0px #ccc;
+    -moz-box-shadow:inset 0 2px 2px 0px #ccc;
+    -webkit-box-shadow:inset 0 2px 2px 0px #ccc;
+}
+section.hidden{
+    display:none;
+}
+section#countryList{
+    background-color:#eee;
+    border:1px solid #999;
+    box-shadow:0 0 3px 0 #aaa;
+    -moz-box-shadow:0 0 3px 0 #aaa;
+    -webkit-box-shadow:0 0 3px 0 #aaa;
+    position:absolute;
+    min-width:350px;
+    right:20px;
+    top:75px;
+}
+section.column{
+    display:inline-block;
+    vertical-align:top;
+}
+input[type="button"].unstyled{
+    background:none;
+    border:none;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    font-size:16px;
+    height:30px;
+    padding:0 8px;
+    text-align:left;
+    width:auto;
+}
+input[type="button"].unstyled:hover, input[type="button"].unstyled:focus{
+    background-color:#ddd;
+    text-decoration:none;
+}
+section#coinShowcase{
+    text-align:center;
+}
+section#coinShowcase>section:first-child>section{
+    border-bottom:1px solid #ccc;
+    min-height:100px;
+}
+section#coinShowcase>section>section{
+    padding:10px 0;
+    width:450px;
+}
+section#coinShowcase section.unstyled{
+    border-bottom:none;
+    height:0px;
+    min-height:0px;
+}
+section#coinShowcase h1{
+    font-size:36px;
+    font-weight:normal;
+    padding:5px 0;
+}
+section#coinShowcase h2{
+    font-size:20px;
+    font-weight:normal;
+    padding:5px 0;
+    line-height:2;
+}
+section p{
+    font-size:12px;
+    padding:5px;
+    text-align:center;
+}
+section#coinShowcase a, section#coinShowcase a:hover, section#coinShowcase a:active{
+    text-decoration:none;
+    width:200px;
+}
+section#coinShowcase img{
+    max-height:250px;
+    max-width:250px;
+}
+section#variantDetails{
+    text-align:left;
+}
+section.coinRecord{
+    vertical-align:middle;
+}
+section.cell{
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    display:inline-block;
+    display:inline-block;
+    padding:10px 0;
+    text-align:center;
+    vertical-align:middle;
+    width:14%;
+}
+section.cell.imageShowcase{
+    min-width:250px;
+    width:20%;
+}
+section.coinRecord img{
+    max-height:100px;
+    max-width:100px;
+    padding:10px;
+    text-align:left;
+    vertical-align:top;
+}
+form.pagination{
+    text-align:right;
+}
+form.pagination fieldset input{
+    vertical-align:middle;
+    min-width:0;
+}
+form.pagination fieldset input[type="text"]{
+    width:20px;
+}
+section.popup{
+    background-color:rgba(17,17,17,0.8);
+    height:100%;
+    left:20%;
+    min-width:500px;
+    padding-top:50px;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:60%;
+}
+section.popup *{
+    margin-bottom:0px;
+    margin-top:10px;
+    position:relative;
+    z-index:10;
+}
+section.popup button.popupCloseButton{
+    background:url(img/close.png) no-repeat center right #ddd;
+}
+section.popup img{
+    max-height:500px;
+    max-width:500px;
+    text-align:center;
+}
+section.popup h1{
+    color:#fff;
+}
+section.cell:hover{
+    background-color:#ccc;
+}
+input.hidden{
+    display:none;
+}
+section.popup#editSuccess{
+    background-color:#0f0;
+    color:#fff;
+    height:200px;
+    top:20%;
+}
+section.popup#editFail{
+    background-color:#f00;
+    color:#fff;
+    height:200px;
+    top:20%;
+}
+.highlighted{
+    background-color:#F7EB5E;
+}
+.giant{
+    border-radius:5px !important;
+    -moz-border-radius:5px !important;
+    -webkit-border-radius:5px !important;
+    display:inline-block;
+    font-size:40px !important;
+    height:auto !important;
+    margin:20px 0 !important;
+    width:400px !important;
+}
+header#fixedHeader{
+    border-bottom:1px solid #ccc;
+}
+span.screenDimmer{
+    background-color:rgba(17,17,17,0.75);
+    height:100%;
+    left:0;
+    margin-top:0 !important;
+    position:fixed;
+    top:0;
+    width:100%;
+}
